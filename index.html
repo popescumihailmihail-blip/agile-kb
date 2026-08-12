@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agile Codex — Bază de cunoștințe Agile & Scrum</title>
+<meta name="description" content="Bibliotecă practică Agile/Scrum distilată din 23 de cărți de referință. Ghiduri, glosar trilingv, dezbateri. RU · RO · EN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg class="logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32">
+          <stop stop-color="#38e8ff"/><stop offset=".5" stop-color="#7c5cff"/><stop offset="1" stop-color="#ff5cc8"/>
+        </linearGradient></defs>
+        <circle cx="16" cy="16" r="13" stroke="url(#lg)" stroke-width="2.4"/>
+        <path d="M16 6 A10 10 0 0 1 26 16" stroke="url(#lg)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="26" cy="16" r="2.6" fill="#ff5cc8"/>
+        <circle cx="16" cy="16" r="3.4" fill="url(#lg)"/>
+      </svg>
+      <span>Agile&nbsp;Codex</span>
+    </a>
+    <nav>
+      <a href="#library"  data-nav="library"></a>
+      <a href="#playbooks" data-nav="playbooks"></a>
+      <a href="#glossary" data-nav="glossary"></a>
+      <a href="#debates"  data-nav="debates"></a>
+      <a href="#sources"  data-nav="sources"></a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="lang" id="lang" role="group" aria-label="Language">
+      <button data-lang="ru">РУ</button>
+      <button data-lang="ro">RO</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <button class="burger" id="burger" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="eyebrow" data-i18n="hero.eyebrow"></div>
+      <h1><span data-i18n="hero.title1"></span> <span class="grad-text" data-i18n="hero.title2"></span></h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="cta">
+        <a class="btn primary" href="#library" data-i18n="hero.cta1"></a>
+        <a class="btn ghost" href="#playbooks" data-i18n="hero.cta2"></a>
+      </div>
+      <div class="hero-stats">
+        <div class="s"><b>23</b><span data-i18n="hero.stat_books"></span></div>
+        <div class="s"><b>368</b><span data-i18n="hero.stat_terms"></span></div>
+        <div class="s"><b>8</b><span data-i18n="hero.stat_playbooks"></span></div>
+        <div class="s"><b>3</b><span data-i18n="hero.stat_langs"></span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="orbit" viewBox="0 0 500 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="ga" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#38e8ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+          <linearGradient id="gb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff5cc8"/><stop offset="1" stop-color="#ffc24b"/></linearGradient>
+        </defs>
+        <circle class="ring" cx="250" cy="210" r="170"/>
+        <circle class="ring" cx="250" cy="210" r="120"/>
+        <circle class="ring" cx="250" cy="210" r="70"/>
+        <g class="spin">
+          <circle class="arc" cx="250" cy="210" r="170" stroke="url(#ga)" stroke-dasharray="220 850"/>
+          <circle class="node" cx="420" cy="210" r="9" fill="#38e8ff"/>
+        </g>
+        <g class="spin rev">
+          <circle class="arc" cx="250" cy="210" r="120" stroke="url(#gb)" stroke-dasharray="150 600"/>
+          <circle class="node" cx="130" cy="210" r="7" fill="#ff5cc8"/>
+        </g>
+        <g class="spin" style="animation-duration:12s">
+          <circle class="arc" cx="250" cy="210" r="70" stroke="#7c5cff" stroke-dasharray="90 350"/>
+          <circle class="node" cx="320" cy="210" r="6" fill="#7c5cff"/>
+        </g>
+        <circle cx="250" cy="210" r="34" fill="url(#ga)" class="pulse"/>
+        <circle cx="250" cy="210" r="34" fill="none" stroke="#fff" stroke-opacity=".25"/>
+        <text x="250" y="216" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700" fill="#0b0d1a">Aⁿ</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LIBRARY ===================== -->
+<section id="library">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <div class="eyebrow" data-i18n="lib.eyebrow"></div>
+        <h2 data-i18n="lib.title"></h2>
+        <p data-i18n="lib.sub"></p>
+      </div>
+    </div>
+    <div class="filters" id="lib-filters"></div>
+    <div class="grid" id="lib-grid"></div>
+  </div>
+</section>
+
+<!-- ===================== PLAYBOOKS ===================== -->
+<section id="playbooks">
+  <div class="wrap">
+    <div class="sec-head"><div class="t">
+      <div class="eyebrow" data-i18n="pb.eyebrow"></div>
+      <h2 data-i18n="pb.title"></h2>
+      <p data-i18n="pb.sub"></p>
+    </div></div>
+    <div class="pb-grid" id="pb-grid"></div>
+  </div>
+</section>
+
+<!-- ===================== GLOSSARY ===================== -->
+<section id="glossary">
+  <div class="wrap">
+    <div class="sec-head"><div class="t">
+      <div class="eyebrow" data-i18n="gl.eyebrow"></div>
+      <h2 data-i18n="gl.title"></h2>
+      <p data-i18n="gl.sub"></p>
+    </div>
+      <div class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="gl-search" type="search" data-i18n-ph="gl.search">
+      </div>
+    </div>
+    <div class="gloss" id="gl-table"></div>
+    <p class="gloss-note" id="gl-count" style="margin-top:14px"></p>
+  </div>
+</section>
+
+<!-- ===================== DEBATES ===================== -->
+<section id="debates">
+  <div class="wrap">
+    <div class="sec-head"><div class="t">
+      <div class="eyebrow" data-i18n="db.eyebrow"></div>
+      <h2 data-i18n="db.title"></h2>
+      <p data-i18n="db.sub"></p>
+    </div></div>
+    <div class="acc" id="db-acc"></div>
+  </div>
+</section>
+
+<!-- ===================== SOURCES ===================== -->
+<section id="sources">
+  <div class="wrap">
+    <div class="sec-head"><div class="t">
+      <div class="eyebrow" data-i18n="src.eyebrow"></div>
+      <h2 data-i18n="src.title"></h2>
+      <p data-i18n="src.sub"></p>
+    </div></div>
+    <div class="grid" id="src-grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><span>Agile&nbsp;Codex</span></div>
+    <p class="muted" data-i18n="footer.note"></p>
+  </div>
+</footer>
+
+<!-- ===================== MODAL ===================== -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="veil" data-close></div>
+  <div class="panel" id="modal-body" role="dialog" aria-modal="true"></div>
+</div>
+
+<script src="assets/js/content-ui.js"></script>
+<script src="assets/js/content-books-a.js"></script>
+<script src="assets/js/content-books-b.js"></script>
+<script src="assets/js/content-books-c.js"></script>
+<script src="assets/js/content-books-d.js"></script>
+<script src="assets/js/content-playbooks.js"></script>
+<script src="assets/js/content-glossary.js"></script>
+<script src="assets/js/content-debates.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
